@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="741.0" prefWidth="591.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="assessmentanalyser.controllers.EnterGradesController">
+   <children>
+      <VBox layoutX="28.0" layoutY="29.0" prefHeight="683.0" prefWidth="536.0" style="-fx-background-color: #EFEBE9;" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="29.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="ENTER GRADES">
+               <font>
+                  <Font name="Lucida Console" size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="subject" alignment="CENTER" labelFloat="true" promptText="subject" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="90.0" />
+               </padding>
+               <font>
+                  <Font name="Lucida Console" size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="grade" alignment="CENTER" labelFloat="true" prefHeight="79.0" prefWidth="272.0" promptText="grade" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="90.0" />
+               </padding>
+               <font>
+                  <Font name="Lucida Console" size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="studentId" alignment="CENTER" labelFloat="true" promptText="student id" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="120.0" right="120.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="100.0" />
+               </padding>
+               <font>
+                  <Font name="Lucida Console" size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="register" alignment="CENTER" buttonType="RAISED" defaultButton="true" onAction="#saveGrade" style="-fx-background-color: #4CAF50;" text="SAVE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Lucida Console" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="190.0" top="70.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="93.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/done.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow height="92.52" radius="46.537499999999994" width="95.63" />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

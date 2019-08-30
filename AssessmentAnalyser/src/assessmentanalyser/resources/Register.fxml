@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="registrationForm" prefHeight="683.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assessmentanalyser.controllers.RegisterController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="277.0" text="REGISTRATION FORM">
+         <font>
+            <Font name="Lucida Console" size="27.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <JFXTextField fx:id="fname" alignment="CENTER" labelFloat="true" onAction="#registerStudent" promptText="first name" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="10.0" left="90.0" right="90.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="90.0" />
+         </padding>
+         <font>
+            <Font name="Lucida Console" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lname" alignment="CENTER" labelFloat="true" onAction="#registerStudent" promptText="last name" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="10.0" left="90.0" right="90.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="90.0" />
+         </padding>
+         <font>
+            <Font name="Lucida Console" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="id" alignment="CENTER" labelFloat="true" onAction="#registerStudent" promptText="id(numeric)" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="10.0" left="120.0" right="120.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="100.0" />
+         </padding>
+         <font>
+            <Font name="Lucida Console" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="className" alignment="CENTER" labelFloat="true" promptText="class">
+         <VBox.margin>
+            <Insets left="130.0" right="130.0" top="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Lucida Console" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="register" alignment="CENTER" buttonType="RAISED" defaultButton="true" onAction="#registerStudent" style="-fx-background-color: #4CAF50;" text="REGISTER">
+         <font>
+            <Font name="Lucida Console" size="25.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="190.0" top="50.0" />
+         </VBox.margin>
+         <graphic>
+            <ImageView fitHeight="93.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/done.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

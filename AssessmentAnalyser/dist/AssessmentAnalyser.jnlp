@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AssessmentAnalyser.jnlp">
+  <information>
+    <title>AssessmentAnalyser</title>
+    <vendor>AUGUSTINE</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AssessmentAnalyser.jar" size="35376" download="eager" />
+    <jar href="lib/derby.jar" size="3104883" download="eager" />
+    <jar href="lib/jfoenix-8.0.1.jar" size="2405714" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AssessmentAnalyser" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="assessmentanalyser.main.AssessmentAnalyser"  name="AssessmentAnalyser" />
+  <update check="always"/>
+</jnlp>

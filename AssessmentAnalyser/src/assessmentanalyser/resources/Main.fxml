@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="600.0" style="-fx-background-color: #BDBDBD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assessmentanalyser.controllers.MainController">
+   <children>
+      <VBox layoutY="142.0" prefHeight="485.0" prefWidth="175.0" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="420.0" AnchorPane.topAnchor="142.0">
+         <children>
+            <JFXButton id="rigister" fx:id="rigister" buttonType="RAISED" onAction="#registerStudent" prefHeight="116.0" prefWidth="183.0" styleClass="register" stylesheets="@../../css/analyser.css" text="REGISTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="18.0" left="12.0" right="4.0" top="4.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="4.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton id="analyse" fx:id="analyse" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#analyseResults" prefHeight="116.0" prefWidth="183.0" styleClass="analyse" stylesheets="@../../css/analyser.css" text="ANALYSIS">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="18.0" left="12.0" right="4.0" top="4.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="4.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton id="view" fx:id="view" buttonType="RAISED" layoutX="10.0" layoutY="126.0" onAction="#viewStudentsPerfomance" prefHeight="116.0" prefWidth="183.0" styleClass="view" stylesheets="@../../css/analyser.css" text="VIEW">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="18.0" left="12.0" right="4.0" top="4.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="4.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton id="view" fx:id="enterGrades" buttonType="RAISED" layoutX="32.0" layoutY="300.0" onAction="#enterGradesAssessment" prefHeight="116.0" prefWidth="183.0" styleClass="view" stylesheets="@../../css/analyser.css" text="ENTER GRADES">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets right="4.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="18.0" left="12.0" right="4.0" top="4.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Label alignment="TOP_CENTER" layoutX="40.0" layoutY="35.0" prefHeight="95.0" prefWidth="533.0" text="NAVIGATION WINDOW" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="98.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/school.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <StackPane fx:id="stackPane" layoutX="205.0" layoutY="142.0" prefHeight="471.0" prefWidth="362.0" style="-fx-background-color: #B0BEC5;" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="142.0" />
+   </children>
+</AnchorPane>

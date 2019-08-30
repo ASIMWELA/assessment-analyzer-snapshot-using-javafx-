@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assessmentanalyser.controllers.PerfomanceChartController">
+   <children>
+      <LineChart fx:id="perfomanceTrend" layoutX="26.0" layoutY="31.0" prefHeight="505.0" prefWidth="521.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="31.0">
+        <xAxis>
+          <CategoryAxis label="SUBJECTS" side="BOTTOM" fx:id="xAxix" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxix" label="MARKS(%)" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

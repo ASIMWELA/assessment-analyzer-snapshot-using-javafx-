@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainContainer" prefHeight="751.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assessmentanalyser.controllers.GradesViewController">
+   <children>
+      <TableView fx:id="gradesTable" layoutX="24.0" layoutY="88.0" prefHeight="436.0" prefWidth="599.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="88.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="52.0" text="ID" />
+          <TableColumn fx:id="studentName" prefWidth="149.0" text="STUDENT NAME" />
+            <TableColumn fx:id="subject" minWidth="7.0" prefWidth="149.0" text="SUBJECT" />
+            <TableColumn fx:id="score" prefWidth="86.0" text="SCORE" />
+            <TableColumn fx:id="className" prefWidth="78.0" text="CLASS" />
+        </columns>
+         <effect>
+            <DropShadow height="39.66" radius="22.439999999999998" width="52.1" />
+         </effect>
+      </TableView>
+      <Label layoutX="44.0" layoutY="25.0" prefHeight="57.0" prefWidth="208.0" text="VIEW RESULTS BY">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="selectionBox" layoutX="252.0" layoutY="31.0" prefHeight="45.0" prefWidth="208.0" AnchorPane.leftAnchor="252.0" />
+      <JFXButton fx:id="viewButton" buttonType="RAISED" layoutX="186.0" layoutY="699.0" onAction="#viewResults" prefHeight="45.0" prefWidth="142.0" style="-fx-background-color: #6A1B9A;" text="VIEW" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="186.0" AnchorPane.rightAnchor="223.0" />
+      <ChoiceBox fx:id="searchClue" layoutX="471.0" layoutY="31.0" prefHeight="45.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
